@@ -134,7 +134,7 @@ p {
   white-space: nowrap;
   vertical-align: middle;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.30rem;
   border-radius: 5px;
   padding: 15px 25px;
   border: 1px solid transparent;
@@ -523,15 +523,15 @@ p {
 .ud-hero-content .ud-hero-title {
   color: var(--white);
   font-weight: 700;
-  font-size: 45px;
-  line-height: 60px;
+  font-size: 4.5rem;
+
   text-align: center;
   margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ud-hero-content .ud-hero-title {
-    font-size: 38px;
+    font-size: 4rem;
     line-height: 50px;
   }
 }
@@ -2603,3 +2603,4 @@ p {
   }
 }
 /*# sourceMappingURL=ud-styles.css.map */
+

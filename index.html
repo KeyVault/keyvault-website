@@ -46,6 +46,13 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/ud-styles.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/swiper.css">
     
   </head>
   <body>
@@ -99,29 +106,24 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+            <div class="ud-hero-content wow fadeInUp" data-wow-delay=".15s">
               <h1 class="ud-hero-title">
-                Easy Password Management, Anywhere, Anytime
+                KeyVault | Password Manager + VPN Combo
               </h1>
               <p class="ud-hero-desc">
-                Stay Connected and Protected Online.
+                Safe. Unnoticed. Free.
               </p>
               <ul class="ud-hero-buttons">
                 <li>
-                  <a href="#" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-white-btn ">
-                    Add to Chrome
+                  <a href="#" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-white-btn d-flex flex-row justify-content-center">
+                    <img class="mx-2" src="assets/images/browsers/chrome-logo.svg" alt="" srcset="" width="30">
+                    <div>Install</div>
                   </a>
                 </li>
               </ul>
             </div>
-            <div
-              class="ud-hero-brands-wrapper wow fadeInUp"
-              data-wow-delay=".3s"
-            >
-              <img src="assets/images/logo/logo.png" alt="brand" />
-            </div>
             <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
-              <img src="assets/images/hero/hero-image.svg" alt="hero-image" />
+              <img class="rounded-top" src="assets/images/hero/promo-banner.svg" alt="hero-image" />
               <img
                 src="assets/images/hero/dotted-shape.svg"
                 alt="shape"
@@ -133,6 +135,8 @@
                 class="shape shape-2"
               />
             </div>
+      
+      
           </div>
         </div>
       </div>
@@ -155,10 +159,10 @@
         </div>
         <div class="row">
           <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
-              <div class="ud-feature-icon">
-                <i class="material-icons">login</i>
-              </div>
+            <div class="mx-4 ud-single-feature wow fadeInUp" data-wow-delay=".1s">
+              
+              <img src="assets/images/main-features/login-and-go.svg" alt="log in and go">
+
               <div class="ud-feature-content">
                 <h3 class="ud-feature-title">Log in and go</h3>
                 <p class="ud-feature-desc">
@@ -169,10 +173,10 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
-              <div class="ud-feature-icon">
-                <i class="material-icons">description</i>
-              </div>
+            <div class="mx-4 ud-single-feature wow fadeInUp" data-wow-delay=".15s">
+
+              <img src="assets/images/main-features/file-secure.svg" alt="save important doc and notes">
+              
               <div class="ud-feature-content">
                 <h3 class="ud-feature-title">Store digital records</h3>
                 <p class="ud-feature-desc">
@@ -183,10 +187,8 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
-              <div class="ud-feature-icon">
-                <i class="material-icons">password</i>
-              </div>
+            <div class="mx-4 ud-single-feature wow fadeInUp" data-wow-delay=".2s">
+              <img src="assets/images/main-features/generate-password.svg" alt="generate passwords">
               <div class="ud-feature-content">
                 <h3 class="ud-feature-title">Generate strong passwords</h3>
                 <p class="ud-feature-desc">
@@ -197,6 +199,76 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="features" class="ud-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title">
+              <span>VPN</span>
+              <h2>KeyVault VPN advantages</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="mx-4 ud-single-feature wow fadeInUp" data-wow-delay=".1s">
+              
+              <img src="assets/images/vpn/vpn-shield.svg" alt="">
+              
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title">Enjoy free VPN</h3>
+                <p class="ud-feature-desc">
+                  get 4 GB of fast VPN traffic each month.
+                </p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="mx-4 ud-single-feature wow fadeInUp" data-wow-delay=".15s">
+
+              <img src="assets/images/vpn/around_the_world.svg" alt="">
+
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title">Open access to any content</h3>
+                <p class="ud-feature-desc">Access any online content from anywhere in the world easily.</p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="mx-4 ud-single-feature wow fadeInUp" data-wow-delay=".2s">
+              <img src="assets/images/vpn/choose-vpn.svg" alt="">
+
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title">Use it when you need it</h3>
+                <p class="ud-feature-desc">
+                  Decide for which websites or apps your VPN should be on.
+                </p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper mySwiper mt-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="showcase-image" src="assets/images/figma-designs/vpn-connected.png" alt="" srcset=""></div>
+            <div class="swiper-slide"><img class="showcase-image" src="assets/images/figma-designs/vpn-disconnected.png" alt="" srcset=""></div>
+            <div class="swiper-slide"><img class="showcase-image" src="assets/images/figma-designs/vault-categorie-login.png" alt="" srcset=""></div>
+            <div class="swiper-slide"><img class="showcase-image" src="assets/images/figma-designs/vault-add-item-password.png" alt="" srcset=""></div>
+            <div class="swiper-slide"><img class="showcase-image" src="assets/images/figma-designs/vault-add-item-password-fill.png" alt="" srcset=""></div>
+            <div class="swiper-slide"><img class="showcase-image" src="assets/images/figma-designs/vault-categorie-notes.png" alt="" srcset=""></div>
+            <div class="swiper-slide"><img class="showcase-image" src="assets/images/figma-designs/create-note.png" alt="" srcset=""></div>
+            <div class="swiper-slide"><img class="showcase-image" src="assets/images/figma-designs/file-upload.png" alt="" srcset=""></div>
+            <div class="swiper-slide"><img class="showcase-image" src="assets/images/figma-designs/record-audio-on.png" alt="" srcset=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
       </div>
     </section>
     <!-- ====== Features End ====== -->
@@ -348,12 +420,12 @@
             <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
               <div class="accordion">
                 <button
-                  class="ud-faq-btn collapsed"
+                  class="ud-faq-btn collapsed "
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
                 >
                   <span class="icon flex-shrink-0">
-                    <i class="lni lni-chevron-down"></i>
+                    <i class="lni lni-chevron-up material-icons">expand_more</i>
                   </span>
                   <span>How to use KeyVault?</span>
                 </button>
@@ -372,13 +444,13 @@
                   data-bs-target="#collapseSix"
                 >
                   <span class="icon flex-shrink-0">
-                    <i class="lni lni-chevron-down"></i>
+                    <i class="lni lni-chevron-up material-icons">expand_more</i>
                   </span>
-                  <span>Can I store other sensitive information besides passwords?</span>
+                  <span>How to by KeyVault Premium?</span>
                 </button>
                 <div id="collapseSix" class="accordion-collapse collapse">
                   <div class="ud-faq-body">
-                    Yes, KeyVault offer the ability to store and secure other sensitive information such as credit card details, secure notes, and personal information.
+                    Proceed to the <a href="#">payment page</a> and choose the plan that suits you best. We have 1-month, 1-year, or 2-year subscription options.
                   </div>
                 </div>
               </div>
@@ -391,13 +463,20 @@
                   data-bs-target="#collapseThree"
                 >
                   <span class="icon flex-shrink-0">
-                    <i class="lni lni-chevron-down"></i>
+                    <i class="lni lni-chevron-up material-icons">expand_more</i>
                   </span>
-                  <span>Can KeyVault autofill my login credentials?</span>
+                  <span>Why do I need VPN?</span>
                 </button>
                 <div id="collapseThree" class="accordion-collapse collapse">
                   <div class="ud-faq-body">
-                    Absolutely. KeyVault can automatically fill in your username and password fields on websites, saving you time and effort.
+                    A VPN is like a Swiss Army knife for the internet. It has many uses that can help you stay safe and protect your privacy online. With a VPN, you can:
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><b>Hide your real IP address</b>, browse the web without revealing your personal details by hiding your location and online activities.</li>
+                      <li class="list-group-item"><b>Stay safe on public Wi-Fi networks</b> by protecting your private files and sensitive information from snoopers and hackers with a shielded connection.</li>
+                      <li class="list-group-item"><b>Stream and download</b> securely and anonymously with unlimited freedom using a VPN.</li>
+                      <li class="list-group-item"><b>Save money</b>, unlock online discounts with a VPN for better shopping deals.</li>
+                    </ul>
+
                   </div>
                 </div>
               </div>
@@ -412,13 +491,13 @@
                   data-bs-target="#collapseFour"
                 >
                   <span class="icon flex-shrink-0">
-                    <i class="lni lni-chevron-down"></i>
+                    <i class="lni lni-chevron-up material-icons">expand_more</i>
                   </span>
-                  <span>Can I access my passwords from multiple devices?</span>
+                  <span>Do You log my data?</span>
                 </button>
                 <div id="collapseFour" class="accordion-collapse collapse">
                   <div class="ud-faq-body">
-                    Yes, every tier offer synchronization across devices, allowing you to access your passwords from different computers and devices.
+                    KeyVault is a privacy-driven company that prioritizes the protection of your personal data. We never share or sell your information, and we're committed to transparency. <b> We don't store user activity or connection logs.</b> Instead, we collect minimal data solely to address technical issues. Rest assured, this information cannot be linked to your specific activities. For details on our data collection and processing, please refer to our <a href="#">Privacy Policy.</a>
                   </div>
                 </div>
               </div>
@@ -431,14 +510,13 @@
                   data-bs-target="#collapseFive"
                 >
                   <span class="icon flex-shrink-0">
-                    <i class="lni lni-chevron-down"></i>
+                    <i class="lni lni-chevron-up material-icons">expand_more</i>
                   </span>
-                  <span>What happens if I uninstall the extension?</span>
+                  <span>What type of encryption is used in KeyVault VPN?</span>
                 </button>
                 <div id="collapseFive" class="accordion-collapse collapse">
                   <div class="ud-faq-body">
-                    Uninstalling a KeyVault Chrome extension does not delete your stored passwords.
-                     However, you won't have easy access to them unless you reinstall the extension
+                    KeyVault VPN uses advanced AES-256 encryption, which provides strong security for your data. It's highly resistant to hacking attempts and ensures your information stays safe and private. <a href="#">Learn more about AES-256 encryption.</a>
                   </div>
                 </div
               </div>
@@ -633,6 +711,21 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        
+      });
+    </script>
+
     <script>
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");
